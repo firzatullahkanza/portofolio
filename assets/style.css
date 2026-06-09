@@ -1,0 +1,77 @@
+/* ==========================================================================
+   1. CORE STYLE (GAYA DASAR)
+   ========================================================================== */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* ==========================================================================
+   2. NAVBAR & LAYOUT
+   ========================================================================== */
+.navbar-fixed {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.blob-bg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.profile-img {
+  position: relative;
+  z-index: 2;
+}
+
+#to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* ==========================================================================
+   3. WARNA TEMA BARU (DEEP SLATE BLUE & CYAN)
+   ========================================================================== */
+
+/* Warna teks utama (Cyan tajam untuk highlight text seperti "Tentang Saya") */
+.text-primary-custom {
+  color: #06b6d4 !important;
+}
+
+/* Warna background elemen (Biru laut modern) */
+.bg-primary-custom {
+  background-color: #0ea5e9 !important;
+}
+
+/* Tombol utama (Warna Slate Gelap Premium dengan Border Cyan) */
+.btn-primary-custom {
+  background-color: #0f172a !important; 
+  border-color: #06b6d4 !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease !important; /* Efek transisi halus saat disentuh */
+}
+
+/* Efek Tombol saat Disorot Kursor (Hover) */
+.btn-primary-custom:hover {
+  background-color: #06b6d4 !important; /* Berubah jadi cyan menyala */
+  border-color: #06b6d4 !important;
+  color: #0f172a !important; /* Teks berubah gelap agar tetap terbaca jelas */
+  opacity: 1 !important;
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.6); /* Efek glow/bercahaya khas IT */
+}
